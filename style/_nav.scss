@@ -1,0 +1,320 @@
+.main_header {
+  width: 100%;
+  height: 3rem;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid $dark-grey;
+  position: fixed;
+  background-color: transparent;
+  // position: absolute;
+  z-index: 30;
+
+  .information {
+    width: max-content;
+    background-color: transparent;
+    @include flexCenter(row);
+
+    div {
+      @include flexCenter(row);
+      margin-left: 1em;
+      svg {
+        color: $white;
+      }
+      p {
+        font-size: 0.8rem;
+        margin-left: 1em;
+        @include fontNormal;
+        color: $white;
+      }
+      &:last-child {
+        margin-left: 2em;
+      }
+    }
+
+    .middle_svg {
+      margin-left: 2em;
+      color: $svg_carrot_color;
+      animation: svgAnimation linear 3s infinite;
+    }
+
+    @keyframes svgAnimation {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  }
+  .hide_text {
+    @media (max-width: 950px) {
+      display: none;
+    }
+  }
+  .contact {
+    @extend .information;
+    div {
+      &:last-child {
+        margin-right: 1em;
+      }
+    }
+    @media (max-width: 950px) {
+      margin: 0 auto;
+    }
+    @media (max-width: 400px) {
+      font-size: 0.8rem;
+      text-align: center;
+    }
+  }
+}
+
+.burger_menu {
+  width: 70px;
+  height: 70px;
+  background-color: transparent;
+  position: fixed;
+  left: 30px;
+  top: 120px;
+  z-index: 50;
+  @include flexCenter(row);
+  @media (max-width: 800px) {
+    right: 30px !important;
+    left: auto;
+  }
+  .menu {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+    .line {
+      fill: none;
+      stroke: $hamburger-color;
+      stroke-width: 6;
+      transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+        stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .line1 {
+      stroke-dasharray: 10 207;
+      stroke-width: 6;
+
+      animation: line1 1s linear infinite;
+    }
+    .line2 {
+      stroke-dasharray: 60 60;
+      stroke-width: 6;
+      animation: line2 1s linear infinite;
+    }
+    .line3 {
+      stroke-dasharray: 30 207;
+      stroke-width: 6;
+      animation: line3 1s linear infinite;
+    }
+    .opened .line1 {
+      stroke-dasharray: 90 207;
+      stroke-dashoffset: -134;
+      stroke-width: 6;
+    }
+    .opened .line2 {
+      stroke-dasharray: 1 60;
+      stroke-dashoffset: -30;
+      stroke-width: 6;
+    }
+    .opened .line3 {
+      stroke-dasharray: 90 207;
+      stroke-dashoffset: -134;
+      stroke-width: 6;
+    }
+
+    @keyframes line1 {
+      50% {
+        stroke-dasharray: 60 207;
+      }
+      to {
+        stroke-dasharray: 10 207;
+      }
+    }
+    @keyframes line2 {
+      50% {
+        stroke-dasharray: 20 60;
+      }
+      to {
+        stroke-dasharray: 60 60;
+      }
+    }
+    @keyframes line3 {
+      50% {
+        stroke-dasharray: 60 207;
+      }
+      to {
+        stroke-dasharray: 30 207;
+      }
+    }
+  }
+}
+
+.nav_container {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(#000000, 0.6);
+  z-index: 60;
+
+  .side_navigation {
+    width: $sideBarWidth;
+    min-width: $sideBarWidth;
+    height: 100vh;
+    left: -200px;
+    top: 0;
+    background-color: $sideNav-background;
+    position: fixed;
+    animation: navAnimation 1s forwards;
+    overflow-y: scroll;
+    @include scroll;
+    @media (max-width: 800px) {
+      left: auto;
+      right: -200px;
+    }
+
+    .close {
+      width: 85%;
+      height: 2rem;
+      background-color: transparent;
+      margin: 20px auto;
+      text-align: end;
+      @media (max-width: 800px) {
+        text-align: start;
+      }
+      svg {
+        cursor: pointer;
+        color: $dark-grey;
+        font-size: 1.3rem;
+      }
+    }
+    .logo {
+      width: 85%;
+      height: 150px;
+      min-height: 150px;
+      margin: 30px auto;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        mix-blend-mode: lighten;
+      }
+    }
+    ul {
+      width: 85%;
+      height: max-content;
+      min-height: max-content;
+      display: flex;
+      flex-direction: column;
+      margin: 50px auto;
+      background-color: transparent;
+      list-style: none;
+      padding: 0;
+      li {
+        width: auto;
+        background-color: transparent;
+        margin-top: 0.8em;
+        font-size: 1.3rem;
+        border-top: 1px solid white;
+        padding-top: 0.8em;
+        display: flex;
+        align-items: center;
+
+        &:hover {
+          a {
+            color: $svg_carrot_color;
+            margin-left: 1em;
+            transition: 500ms;
+          }
+          svg {
+            display: block;
+            transition: 500ms;
+          }
+        }
+        a {
+          text-decoration: none;
+          color: $white;
+        }
+        svg {
+          width: 15px;
+          height: 15px;
+          color: $svg_carrot_color;
+          animation: svgAnimation linear 3s infinite;
+          display: none;
+        }
+      }
+    }
+    .info {
+      width: 85%;
+      height: max-content;
+      min-height: 300px;
+      background-color: transparent;
+      margin: 30px auto;
+      margin-top: 90px;
+      display: flex;
+      flex-direction: column;
+      h2 {
+        margin: 0;
+        color: $white;
+        text-align: center;
+        font-size: 2rem;
+        @include fontNormalBold;
+      }
+      p {
+        margin: 0 auto;
+        margin-top: 20px;
+        text-align: center;
+        @include fontNormal;
+        font-size: 0.8rem;
+        width: 90%;
+        color: $light-grey;
+        &:nth-child(2) {
+          margin-top: 50px;
+        }
+      }
+      svg {
+        margin: 1em auto;
+        color: $svg_carrot_color;
+        animation: svgAnimation linear 3s infinite;
+      }
+      span {
+        text-align: center;
+        @include fontNormalBold;
+        color: $white;
+      }
+      h3 {
+        text-align: center;
+        @include fontNormalBold;
+        color: $crayola_color;
+      }
+    }
+  }
+  @keyframes svgAnimation {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes navAnimation {
+    to {
+      left: 0;
+    }
+  }
+  @media (max-width: 800px) {
+    @keyframes navAnimation {
+      to {
+        right: 0;
+      }
+    }
+  }
+}

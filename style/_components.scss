@@ -1,0 +1,231 @@
+.rotate_text_animation {
+  width: 150px;
+  height: 150px;
+  background-color: transparent;
+  border-radius: 50%;
+  position: absolute;
+  @include flexCenter(row);
+  overflow: hidden;
+  .logo {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: $black_smoke;
+    border-radius: 50%;
+    border: 1px solid $rotate_text_color;
+    @include flexCenter(column);
+    p {
+      margin: 0;
+      color: $white;
+      @include fontNormal;
+
+      &:last-child {
+        font-size: 1.7rem;
+      }
+    }
+  }
+  .text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    animation: rotateText 10s linear infinite;
+    span {
+      position: absolute;
+      left: 50%;
+      font-size: 1rem;
+      transform-origin: 0 73px;
+      color: $rotate_text_color;
+    }
+  }
+  @keyframes rotateText {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}
+.menu_product_container {
+  width: 100%;
+  height: 100px;
+  background-color: transparent;
+  display: flex;
+  margin-top: 1em;
+  cursor: pointer;
+  &:hover {
+    .infos {
+      .title {
+        p {
+          &:nth-child(2) {
+            transition: 500ms;
+            transform: rotate(180deg);
+          }
+        }
+      }
+    }
+  }
+  .img_container {
+    width: 20%;
+    height: 100%;
+    background-color: transparent;
+    border-radius: 10px;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: center;
+    }
+  }
+  .infos {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    .title {
+      width: 100%;
+      height: 35%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      p {
+        margin: 0;
+        width: auto;
+        font-size: 1.1rem;
+        margin: 0 0.5em;
+        @include fontNormal;
+        &:first-child {
+          color: $white;
+        }
+        &:nth-child(2) {
+          transition: 500ms;
+        }
+      }
+    }
+    .ingredients {
+      width: 100%;
+      height: 65%;
+      display: flex;
+      padding: 0.5em;
+      @include fontNormal;
+      font-weight: 400;
+      font-size: 0.8rem;
+      color: $link-txt-blue;
+    }
+  }
+}
+.slider_special {
+  width: 100%;
+  height: max-content;
+  background-color: transparent;
+  overflow: hidden;
+  border-radius: 10px;
+
+  .slider_product_box {
+    width: 250px;
+    min-width: 250px;
+    max-width: 250px;
+    height: 350px;
+    max-height: 350px;
+    min-height: 350px;
+    background-color: transparent;
+    margin: 1em;
+    cursor: pointer;
+    &:hover {
+      .image {
+        img {
+          transition: 500ms;
+          transform: rotate(5deg);
+        }
+      }
+      .infos {
+        h4 {
+          transition: 500ms;
+          transform: rotate(-2deg);
+          color: $svg_carrot_color;
+        }
+        p {
+          &:nth-child(2) {
+            transition: 500ms;
+            transform: rotate(5deg);
+          }
+          &:nth-child(3) {
+            transition: 500ms;
+            transform: rotate(-5deg);
+          }
+        }
+      }
+    }
+
+    .image {
+      width: 100%;
+      height: 60%;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 10px;
+        transition: 500ms;
+      }
+    }
+    .infos {
+      width: 100%;
+      height: 40%;
+      text-align: center;
+
+      h4 {
+        margin: 0;
+        font-size: 1.2rem;
+        transform: translateY(10px);
+        color: $white;
+        transition: 500ms;
+      }
+      p {
+        margin: 0;
+        margin-top: 15px;
+        @include fontNormal;
+
+        &:nth-child(2) {
+          font-size: 0.8rem;
+          color: $crayola_color;
+          transition: 500ms;
+        }
+        &:nth-child(3) {
+          font-size: 1.3rem;
+          color: $dark-grey;
+          transition: 500ms;
+        }
+      }
+    }
+  }
+}
+.home_title {
+  width: 100%;
+  text-align: center;
+  height: max-content;
+  min-height: 5rem;
+  margin-top: 6rem;
+  text-align: center;
+  position: relative;
+  p {
+    font-size: 1rem;
+    @include fontNormal;
+    margin: 0;
+    color: $svg_carrot_color;
+    letter-spacing: 3px;
+  }
+  .logo {
+    width: 200px;
+    height: 20px;
+    object-fit: contain;
+    margin-top: 20px;
+  }
+  h2 {
+    @include fontBeautyRegular;
+    letter-spacing: 3px;
+    font-size: 2.5rem;
+    margin: 0;
+    margin-top: 30px;
+    color: $light-grey;
+  }
+}

@@ -3,6 +3,8 @@ import "../style/main.scss";
 import { Abril_Fatface, Merriweather } from "@next/font/google";
 import SideNavigation from "@/components/sidebar";
 import Footer from "@/components/footer";
+import { Suspense } from "react";
+import Loading from "./loading";
 
 const abrilFatface = Abril_Fatface({
   subsets: ["latin"],
@@ -43,9 +45,11 @@ export default function RootLayout({
       <body>
         <SideNavigation />
         <div className="main_child">
-          <Header />
-          {children}
-          <Footer />
+          <Suspense fallback={<Loading />}>
+            <Header />
+            {children}
+            <Footer />
+          </Suspense>
         </div>
       </body>
     </html>

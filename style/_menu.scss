@@ -1,0 +1,187 @@
+.menu_section_one {
+  width: 100%;
+  min-height: 70vh;
+  height: max-content;
+  background: url("https://i.pinimg.com/originals/00/7e/3d/007e3dff76f39f59a8cb455dd8e07c92.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  display: flex;
+  padding-top: 4rem;
+  .filter {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.582);
+  }
+}
+.menu_section_two {
+  width: 100%;
+  height: max-content;
+  min-height: 110vh;
+  display: flex;
+  flex-direction: column;
+//   padding-bottom: 50px;
+  .menu_container {
+    width: 100%;
+    height: max-content;
+    min-height: 500px;
+    position: relative;
+    margin-top: 50px;
+    padding-bottom: 50px;
+    .image {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+      &:nth-child(1) {
+        top: 0;
+        left: 0;
+      }
+      &:nth-child(2) {
+        top: 0;
+        right: 0;
+      }
+      &:nth-child(3) {
+        bottom: 0;
+        right: 0;
+      }
+      &:nth-child(4) {
+        bottom: 0;
+        left: 0;
+      }
+    }
+    .category_section {
+      width: max-content;
+      height: max-content;
+      min-height: 3rem;
+      position: relative;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      margin-top: 2rem;
+      h3 {
+        @include fontNormal;
+        font-size: 1.6rem;
+        margin: 0 0.5em;
+        color: $white;
+        opacity: 0;
+        transform: translateY(-150%);
+      }
+      svg {
+        width: 13px;
+        height: 13px;
+        color: transparent;
+        border: 1px solid $svg_carrot_color;
+        @include SquareAnimation(7s);
+        opacity: 0;
+      }
+    }
+    .box_container {
+      width: 90%;
+      max-width: 1120px;
+      height: max-content;
+      min-height: 200px;
+      position: relative;
+      margin: 30px auto;
+      display: flex;
+      flex-direction: column;
+      @media (max-width: 400px) {
+        width: 95%;
+      }
+      .box {
+        width: 100%;
+        min-height: 4rem;
+        height: max-content;
+        margin-top: 1em;
+        display: flex;
+        cursor: pointer;
+        &:hover {
+          svg {
+            transform: rotate(180deg);
+            transition: 500ms;
+          }
+        }
+        .image_box {
+          aspect-ratio: 1/1;
+          width: 4rem;
+          transform: translateX(-100px);
+          opacity: 0;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
+        }
+        .information {
+          width: calc(100% - 64px);
+          min-height: 4rem;
+          display: flex;
+          flex-direction: column;
+          transform: translateX(-100px);
+          opacity: 0;
+          .up {
+            width: 100%;
+            min-height: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            @include fontNormal;
+            p {
+              margin: 0 1em;
+              font-size: 1rem;
+              letter-spacing: 3px;
+              color: $white;
+              @media (max-width: 400px) {
+                font-size: 0.8rem;
+              }
+            }
+            svg {
+              width: 15px;
+              height: 15px;
+              min-height: 15px;
+              min-width: 15px;
+              margin: 0 1em;
+              color: $red_exp_color;
+              transition: 500ms;
+            }
+            .price {
+              margin: 0 1em;
+              @include fontBeautyRegular;
+              font-size: 1rem;
+              text-align: center;
+              color: $link-txt-blue;
+              @media (max-width: 500px) {
+                font-size: 0.9rem;
+              }
+            }
+          }
+          .down {
+            width: auto;
+            min-height: 2rem;
+            display: flex;
+            align-items: center;
+            margin-left: 1em;
+            p {
+              margin: 0;
+              @include fontNormal;
+              width: max-content;
+              font-size: 0.7rem;
+              color: $crayola_color;
+            }
+          }
+        }
+      }
+    }
+  }
+}

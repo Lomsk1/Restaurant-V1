@@ -6,7 +6,6 @@ import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { faSquare } from "@fortawesome/free-regular-svg-icons";
 
-
 function SideNavigation() {
   const [navIsShow, setNavIsShow] = useState(false);
 
@@ -33,11 +32,25 @@ function SideNavigation() {
             <ul>
               <li>
                 <FontAwesomeIcon icon={faSquare} />
-                <Link href={"/"}>Home</Link>
+                <Link
+                  href={"/"}
+                  onClick={() => {
+                    setNavIsShow(false);
+                  }}
+                >
+                  Home
+                </Link>
               </li>
               <li>
                 <FontAwesomeIcon icon={faSquare} />
-                <Link href={"/"}>Menus</Link>
+                <Link
+                  href={"/menu"}
+                  onClick={() => {
+                    setNavIsShow(false);
+                  }}
+                >
+                  Menus
+                </Link>
               </li>
               <li>
                 <FontAwesomeIcon icon={faSquare} />

@@ -28,8 +28,8 @@ function Footer() {
       <div className="partners">
         {partners &&
           partners.map((data) => (
-            <Link href={data.url} target={"_blank"}>
-              <img key={data.id} src={data.img} alt="" />
+            <Link key={data.id} href={data.url} target={"_blank"}>
+              <img src={data.img} alt="" />
             </Link>
           ))}
       </div>

@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import MenuProductContainer from "../menuProdCont/index";
 import { useState } from "react";
+import HomeTitle from "../title/home";
 
 function HomePageMenu() {
   const [navIsActive, setNavIsActive] = useState("starter");
@@ -30,16 +31,10 @@ function HomePageMenu() {
         />
       </div>
       {/* Information */}
+
       <div className="info">
         {/* Title */}
-        <div className="title">
-          <p>SPECIAL SELECTION</p>
-          <img
-            src="https://mediacity.co.in/delici/static/media/separator.fc5405c5995258e079d7072ed26a6975.svg"
-            alt=""
-          />
-          <h2>Delicious Menu</h2>
-        </div>
+        <HomeTitle section="SPECIAL SELECTION" title="Delicious Menu" />
         {/* Table */}
         <div className="nav">
           <ul>

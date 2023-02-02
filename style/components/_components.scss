@@ -53,6 +53,15 @@ body {
   }
 }
 
+@mixin SquareAnimation($second) {
+  animation: SquareAnimation linear infinite $second;
+  @keyframes SquareAnimation {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}
+
 $sideBarWidth: 250px;
 
 $sideNav-background: #11151c;

@@ -3,9 +3,15 @@ const nextConfig = {
   experimental: {
     appDir: true,
   },
-  // sassOptions: {
-  //   includePaths: ["./style/components/_components.scss"],
-  //   prependData: `@import "_components.scss";`,
+  // images: {
+  //   remotePatterns: [
+  //     {
+  //       protocol: "https",
+  //       hostname: "image.spreadshirtmedia.com",
+  //       port: "",
+  //       pathname: "/account123/**",
+  //     },
+  //   ],
   // },
 };
 

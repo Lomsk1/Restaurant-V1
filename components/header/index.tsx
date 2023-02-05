@@ -35,7 +35,7 @@ function Header() {
   useEffect(() => {
     window.addEventListener("scroll", listenToScroll);
     return () => window.removeEventListener("scroll", listenToScroll);
-  }, []);
+  }, [listenToScroll]);
 
   return (
     <>

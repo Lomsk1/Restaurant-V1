@@ -76,7 +76,7 @@ function HomePageEvent() {
         {/* Wine Info */}
         <div className="content">
           <div className="info">
-            <p>Lomsk1's WINE BAR</p>
+            <p>Lomsk1&apos;s WINE BAR</p>
             <h2>Wine Bar Menu</h2>
           </div>
           {info &&

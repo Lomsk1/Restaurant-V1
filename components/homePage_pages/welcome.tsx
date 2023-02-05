@@ -4,7 +4,7 @@ function HomePageWelcome() {
   return (
     <section className="home_section_one">
       <div className="information">
-        <p>Welcome to Lomsk1's restaurant</p>
+        <p>Welcome to Lomsk1&apos;s restaurant</p>
         <hr />
         <h1>For the love of delicious food</h1>
         <p>

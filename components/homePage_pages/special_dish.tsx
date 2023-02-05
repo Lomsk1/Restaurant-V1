@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 function HomePageSpecialDish() {
   return (
     <section className="home_section_four">
@@ -5,14 +7,14 @@ function HomePageSpecialDish() {
 
       <div className="info">
         <div className="chef_image">
-          <img
+          <Image
             src="https://duruthemes.com/demo/html/candore/demo1/img/chef/chef.jpg"
             alt=""
           />
         </div>
         <div className="text">
           <p>SPECIAL DISH</p>
-          <img
+          <Image
             className="logo"
             src="https://mediacity.co.in/delici/static/media/separator.fc5405c5995258e079d7072ed26a6975.svg"
             alt=""
@@ -25,7 +27,7 @@ function HomePageSpecialDish() {
           </p>
           <div className="signature">
             <div className="img">
-              <img
+              <Image
                 src="https://duruthemes.com/demo/html/candore/demo1/img/signature.svg"
                 alt=""
               />

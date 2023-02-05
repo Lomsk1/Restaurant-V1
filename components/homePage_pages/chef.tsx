@@ -1,3 +1,4 @@
+import Image from "next/image";
 import HomeTitle from "../title/home";
 
 function HomePageChef() {
@@ -36,7 +37,7 @@ function HomePageChef() {
           info.map((char) => (
             <div key={char.id} className="container">
               <div className="image_box">
-                <img src={char.url} alt="" />
+                <Image src={char.url} alt="" />
               </div>
               <div className="info">
                 <h2>{char.name}</h2>

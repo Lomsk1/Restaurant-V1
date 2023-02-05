@@ -1,3 +1,4 @@
+import Image from "next/image";
 import HomeTitle from "../title/home";
 
 function HomePageEvent() {
@@ -67,7 +68,7 @@ function HomePageEvent() {
       {/* Wine Component */}
       <div className="wine_components">
         <div className="image">
-          <img
+          <Image
             src="https://duruthemes.com/demo/html/candore/demo1/img/banner3.jpg"
             alt=""
           />
@@ -82,7 +83,7 @@ function HomePageEvent() {
             info.map((data) => (
               <div key={data.id} className="wine_box">
                 <div className="image">
-                  <img src={data.url} alt="" />
+                  <Image src={data.url} alt="" />
                 </div>
                 <div className="product_info">
                   <div className="upper">
@@ -110,7 +111,7 @@ function HomePageEvent() {
           events.map((data) => (
             <div key={data.id} className="box">
               <div className="image">
-                <img src={data.url} alt="" />
+                <Image src={data.url} alt="" />
               </div>
               <div className="date">
                 <p>{data.date}</p>

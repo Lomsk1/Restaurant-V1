@@ -3,6 +3,7 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Image from "next/image";
 
 function SliderSpecial() {
   const info = [
@@ -118,7 +119,7 @@ function SliderSpecial() {
               style={{ transform: `translateX(${i != 1 ? i * 50 : 50}%)` }}
             >
               <div className="image">
-                <img src={char.img} alt="" />
+                <Image src={char.img} alt="" />
               </div>
               <div className="infos">
                 <h4>{char.title}</h4>

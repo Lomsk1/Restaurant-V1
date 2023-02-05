@@ -19,11 +19,6 @@ function Header() {
   const [isVisible, setIsVisible] = useState(true);
   const [height, setHeight] = useState(0);
 
-  useEffect(() => {
-    window.addEventListener("scroll", listenToScroll);
-    return () => window.removeEventListener("scroll", listenToScroll);
-  }, []);
-
   const listenToScroll = () => {
     let heightToHideFrom = 150;
     const winScroll =
@@ -36,6 +31,12 @@ function Header() {
       setIsVisible(true);
     }
   };
+
+  useEffect(() => {
+    window.addEventListener("scroll", listenToScroll);
+    return () => window.removeEventListener("scroll", listenToScroll);
+  }, []);
+
   return (
     <>
       {isVisible && (

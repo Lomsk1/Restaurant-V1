@@ -5,6 +5,7 @@ import { faX } from "@fortawesome/free-solid-svg-icons";
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { faSquare } from "@fortawesome/free-regular-svg-icons";
+import Image from "next/image";
 
 function SideNavigation() {
   const [navIsShow, setNavIsShow] = useState(false);
@@ -23,7 +24,7 @@ function SideNavigation() {
               />
             </div>
             <div className="logo">
-              <img
+              <Image
                 src="https://image.spreadshirtmedia.com/image-server/v1/compositions/T129A2PA4172PT32X34Y0D1023468618W4233H5080/views/1,width=550,height=550,appearanceId=2,backgroundColor=000000,noPt=true/skull-with-chefs-hat-and-crossed-knives-baseball-cap.jpg"
                 alt=""
               />

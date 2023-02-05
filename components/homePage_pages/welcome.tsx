@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 function HomePageWelcome() {
   return (
     <section className="home_section_one">
@@ -12,7 +14,7 @@ function HomePageWelcome() {
       <div className="table_book_rotate"></div>
       <div className="table_book">
         <div className="image">
-          <img
+          <Image
             src="https://image.spreadshirtmedia.com/image-server/v1/compositions/T129A2PA4172PT32X34Y0D1023468618W4233H5080/views/1,width=550,height=550,appearanceId=2,backgroundColor=000000,noPt=true/skull-with-chefs-hat-and-crossed-knives-baseball-cap.jpg"
             alt=""
           />

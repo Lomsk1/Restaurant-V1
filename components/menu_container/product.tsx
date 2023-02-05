@@ -10,6 +10,7 @@ import {
   faSquare,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Image from "next/image";
 
 interface Props {
   image: string;
@@ -50,7 +51,7 @@ function MenuProductBox({ image, price, productName, ingredients, id }: Props) {
   return (
     <div className="box" ref={containerRef}>
       <div className="image_box menu_box_similar">
-        <img src={image} alt="" />
+        <Image src={image} alt="" />
       </div>
       <div className="information menu_box_similar">
         <div className="up">

@@ -2,6 +2,7 @@
 
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
+import Image from "next/image";
 import { useRef, useLayoutEffect } from "react";
 
 interface Props {
@@ -44,7 +45,7 @@ function HomeTitle({ section, title }: Props) {
   return (
     <div className="home_title" ref={containerRef}>
       <p className="section_">{section}</p>
-      <img
+      <Image
         className="logo"
         src="https://mediacity.co.in/delici/static/media/separator.fc5405c5995258e079d7072ed26a6975.svg"
         alt=""

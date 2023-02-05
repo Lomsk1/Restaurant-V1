@@ -6,6 +6,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { MenuBoxName } from "../title/menu";
 import MenuProductBox from "./product";
+import Image from "next/image";
 
 interface Props {
   //   children: any;
@@ -18,25 +19,25 @@ function MenuContainer({ category, productData }: Props) {
     <div className="menu_container">
       {/* Images */}
       <div className="image">
-        <img
+        <Image
           src="https://restho-nextjs.vercel.app/assets/images/icon/menu-top-left.svg"
           alt=""
         />
       </div>
       <div className="image">
-        <img
+        <Image
           src="https://restho-nextjs.vercel.app/assets/images/icon/menu-top-right.svg"
           alt=""
         />
       </div>
       <div className="image">
-        <img
+        <Image
           src="https://restho-nextjs.vercel.app/assets/images/icon/menu-btm-right.svg"
           alt=""
         />
       </div>
       <div className="image">
-        <img
+        <Image
           src="https://restho-nextjs.vercel.app/assets/images/icon/menu-btm-left.svg"
           alt=""
         />

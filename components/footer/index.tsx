@@ -3,6 +3,7 @@
 import { faFacebookF, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import { faSquare } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Image from "next/image";
 import Link from "next/link";
 
 // import { useRouter } from "next/router";
@@ -30,7 +31,7 @@ function Footer() {
         {partners &&
           partners.map((data) => (
             <Link key={data.id} href={data.url} target={"_blank"}>
-              <img src={data.image} alt="" />
+              <Image src={data.image} alt="" />
             </Link>
           ))}
       </div>
@@ -49,7 +50,7 @@ function Footer() {
         </div>
         <div className="contact">
           <div className="logo">
-            <img
+            <Image
               src="https://image.spreadshirtmedia.com/image-server/v1/compositions/T129A2PA4172PT32X34Y0D1023468618W4233H5080/views/1,width=550,height=550,appearanceId=2,backgroundColor=000000,noPt=true/skull-with-chefs-hat-and-crossed-knives-baseball-cap.jpg"
               alt=""
             />

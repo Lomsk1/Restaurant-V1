@@ -1,18 +1,19 @@
 import Link from "next/link";
 import HomeTitle from "../title/home";
+import Image from "next/image";
 
 function HomepageMenu() {
   return (
     <section className="home_section_two">
       {/* Ingredients */}
       <div className="ingredients">
-        <img
+        <Image
           src="https://mediacity.co.in/delici/static/media/bg-2.8bae21f85dd8fdf29a8d.png"
           alt=""
         />
       </div>
       <div className="ingredients">
-        <img
+        <Image
           src="https://mediacity.co.in/delici/static/media/bg-1.8f7891ade2cf907c12b1.png"
           alt=""
         />
@@ -29,13 +30,13 @@ function HomepageMenu() {
           <div className="box">
             <div className="upper">
               <div className="background">
-                <img
+                <Image
                   src="https://i.pinimg.com/736x/8e/72/62/8e72623a00b29382d1e8037ec5be78c4.jpg"
                   alt=""
                 />
               </div>
               <div className="img_container">
-                <img
+                <Image
                   src="https://mediacity.co.in/delici/static/media/offer-image-1.c020474aea0ed9a09d2a.jpg"
                   alt=""
                 />
@@ -51,13 +52,13 @@ function HomepageMenu() {
           <div className="box">
             <div className="upper">
               <div className="background">
-                <img
+                <Image
                   src="https://i.pinimg.com/736x/8e/72/62/8e72623a00b29382d1e8037ec5be78c4.jpg"
                   alt=""
                 />
               </div>
               <div className="img_container">
-                <img
+                <Image
                   src="https://mediacity.co.in/delici/static/media/offer-image-2.d655d2ba6f4b2c6f7ac9.jpg"
                   alt=""
                 />
@@ -73,13 +74,13 @@ function HomepageMenu() {
           <div className="box">
             <div className="upper">
               <div className="background">
-                <img
+                <Image
                   src="https://i.pinimg.com/736x/8e/72/62/8e72623a00b29382d1e8037ec5be78c4.jpg"
                   alt=""
                 />
               </div>
               <div className="img_container">
-                <img
+                <Image
                   src="https://mediacity.co.in/delici/static/media/offer-image-3.2220579532c7ff25ef9c.jpg"
                   alt=""
                 />

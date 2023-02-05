@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import RotateText from "../rotate_text/index";
 import { faUtensils } from "@fortawesome/free-solid-svg-icons";
+import Image from "next/image";
 
 function HomePageAbout() {
   return (
@@ -26,7 +27,7 @@ function HomePageAbout() {
 
       {/* Image */}
       <div className="image_container">
-        <img
+        <Image
           src="https://mediacity.co.in/delici/static/media/image-1.661483ecb5620eb91605.jpg"
           alt=""
         />
@@ -36,7 +37,7 @@ function HomePageAbout() {
           innerText="SINCE 1950"
         />
         <div className="coffee">
-          <img
+          <Image
             src="https://mediacity.co.in/delici/static/media/bg-3.b3be8b2e8a3d049196ab.png"
             alt=""
           />

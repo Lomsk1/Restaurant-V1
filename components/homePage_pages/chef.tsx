@@ -37,7 +37,7 @@ function HomePageChef() {
           info.map((char) => (
             <div key={char.id} className="container">
               <div className="image_box">
-                <Image src={char.url} alt="" />
+                <img src={char.url} alt="" />
               </div>
               <div className="info">
                 <h2>{char.name}</h2>

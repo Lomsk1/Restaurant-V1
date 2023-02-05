@@ -45,7 +45,7 @@ function HomeTitle({ section, title }: Props) {
   return (
     <div className="home_title" ref={containerRef}>
       <p className="section_">{section}</p>
-      <Image
+      <img
         className="logo"
         src="https://mediacity.co.in/delici/static/media/separator.fc5405c5995258e079d7072ed26a6975.svg"
         alt=""

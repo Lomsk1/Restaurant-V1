@@ -12,7 +12,7 @@ function MenuProductContainer() {
     <div className="menu_product_container">
       {/* Image */}
       <div className="img_container">
-        <Image
+        <img
           src="https://mediacity.co.in/delici/static/media/menu-image-5.82f62d04acb6111c989f.png"
           alt=""
         />

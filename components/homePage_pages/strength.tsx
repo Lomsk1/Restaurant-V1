@@ -11,7 +11,7 @@ function HomePageStrength() {
       <div className="container">
         <div className="box">
           <div className="image">
-            <Image
+            <img
               src="https://cdn-icons-png.flaticon.com/512/1509/1509483.png"
               alt=""
             />
@@ -24,7 +24,7 @@ function HomePageStrength() {
 
         <div className="box">
           <div className="image">
-            <Image
+            <img
               src="https://cdn-icons-png.flaticon.com/512/2082/2082063.png"
               alt=""
             />
@@ -38,7 +38,7 @@ function HomePageStrength() {
 
         <div className="box">
           <div className="image">
-            <Image
+            <img
               src="https://cdn-icons-png.flaticon.com/512/1983/1983171.png"
               alt=""
             />
@@ -52,7 +52,7 @@ function HomePageStrength() {
 
         <div className="box">
           <div className="image">
-            <Image
+            <img
               src="https://iconarchive.com/download/i107741/google/noto-emoji-activities/52707-party-popper.ico"
               alt=""
             />

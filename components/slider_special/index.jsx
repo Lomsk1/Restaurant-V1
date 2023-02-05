@@ -119,7 +119,7 @@ function SliderSpecial() {
               style={{ transform: `translateX(${i != 1 ? i * 50 : 50}%)` }}
             >
               <div className="image">
-                <Image src={char.img} alt="" />
+                <img src={char.img} alt="" />
               </div>
               <div className="infos">
                 <h4>{char.title}</h4>

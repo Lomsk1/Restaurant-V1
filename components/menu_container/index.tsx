@@ -19,25 +19,25 @@ function MenuContainer({ category, productData }: Props) {
     <div className="menu_container">
       {/* Images */}
       <div className="image">
-        <Image
+        <img
           src="https://restho-nextjs.vercel.app/assets/images/icon/menu-top-left.svg"
           alt=""
         />
       </div>
       <div className="image">
-        <Image
+        <img
           src="https://restho-nextjs.vercel.app/assets/images/icon/menu-top-right.svg"
           alt=""
         />
       </div>
       <div className="image">
-        <Image
+        <img
           src="https://restho-nextjs.vercel.app/assets/images/icon/menu-btm-right.svg"
           alt=""
         />
       </div>
       <div className="image">
-        <Image
+        <img
           src="https://restho-nextjs.vercel.app/assets/images/icon/menu-btm-left.svg"
           alt=""
         />

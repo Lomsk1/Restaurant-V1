@@ -18,7 +18,7 @@ function HomePageMenu() {
     <section className="home_section_five">
       {/* Animation */}
       <div className="animation_one">
-        <Image
+        <img
           src="https://mediacity.co.in/delici/static/media/bg-5.aada0ae02d8a7acdeaf7.png"
           alt=""
         />
@@ -26,7 +26,7 @@ function HomePageMenu() {
 
       {/* Animation */}
       <div className="animation_two">
-        <Image
+        <img
           src="https://mediacity.co.in/delici/static/media/bg-6.c1e0ae1fefd7dd68d5c6.png"
           alt=""
         />

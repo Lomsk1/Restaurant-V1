@@ -31,7 +31,7 @@ function Footer() {
         {partners &&
           partners.map((data) => (
             <Link key={data.id} href={data.url} target={"_blank"}>
-              <Image src={data.image} alt="" />
+              <img src={data.image} alt="" />
             </Link>
           ))}
       </div>
@@ -50,7 +50,7 @@ function Footer() {
         </div>
         <div className="contact">
           <div className="logo">
-            <Image
+            <img
               src="https://image.spreadshirtmedia.com/image-server/v1/compositions/T129A2PA4172PT32X34Y0D1023468618W4233H5080/views/1,width=550,height=550,appearanceId=2,backgroundColor=000000,noPt=true/skull-with-chefs-hat-and-crossed-knives-baseball-cap.jpg"
               alt=""
             />

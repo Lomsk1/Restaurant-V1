@@ -27,7 +27,7 @@ function HomePageAbout() {
 
       {/* Image */}
       <div className="image_container">
-        <Image
+        <img
           src="https://mediacity.co.in/delici/static/media/image-1.661483ecb5620eb91605.jpg"
           alt=""
         />
@@ -37,7 +37,7 @@ function HomePageAbout() {
           innerText="SINCE 1950"
         />
         <div className="coffee">
-          <Image
+          <img
             src="https://mediacity.co.in/delici/static/media/bg-3.b3be8b2e8a3d049196ab.png"
             alt=""
           />

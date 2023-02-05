@@ -51,7 +51,7 @@ function MenuProductBox({ image, price, productName, ingredients, id }: Props) {
   return (
     <div className="box" ref={containerRef}>
       <div className="image_box menu_box_similar">
-        <Image src={image} alt="" />
+        <img src={image} alt="" />
       </div>
       <div className="information menu_box_similar">
         <div className="up">

@@ -19,7 +19,7 @@ export default function Home() {
     <main>
       <HomePageWelcome />
 
-      {/* <HomepageMenu />
+      <HomepageMenu />
 
       <HomePageAbout />
 
@@ -31,9 +31,9 @@ export default function Home() {
 
       <HomePageChef />
 
-      <HomePageStrength /> */}
+      <HomePageStrength />
 
-      {/* <HomePageEvent /> */}
+      <HomePageEvent />
     </main>
   );
 }

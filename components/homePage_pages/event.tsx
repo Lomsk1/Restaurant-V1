@@ -68,7 +68,7 @@ function HomePageEvent() {
       {/* Wine Component */}
       <div className="wine_components">
         <div className="image">
-          <Image
+          <img
             src="https://duruthemes.com/demo/html/candore/demo1/img/banner3.jpg"
             alt=""
           />
@@ -83,7 +83,7 @@ function HomePageEvent() {
             info.map((data) => (
               <div key={data.id} className="wine_box">
                 <div className="image">
-                  <Image src={data.url} alt="" />
+                  <img src={data.url} alt="" />
                 </div>
                 <div className="product_info">
                   <div className="upper">
@@ -111,7 +111,7 @@ function HomePageEvent() {
           events.map((data) => (
             <div key={data.id} className="box">
               <div className="image">
-                <Image src={data.url} alt="" />
+                <img src={data.url} alt="" />
               </div>
               <div className="date">
                 <p>{data.date}</p>

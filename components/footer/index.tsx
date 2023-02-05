@@ -13,12 +13,13 @@ function Footer() {
   const partners = [
     {
       id: 1,
-      img: "https://www.lomsk1.dev/assets/Capture-removebg-preview.9db3cc18.png",
+      image:
+        "https://www.lomsk1.dev/assets/Capture-removebg-preview.9db3cc18.png",
       url: "https://www.lomsk1.dev/",
     },
     {
       id: 2,
-      img: "https://preview.colorlib.com/theme/electro/img/logo.png",
+      image: "https://preview.colorlib.com/theme/electro/img/logo.png",
       url: "https://lomskproject.in/",
     },
   ];
@@ -29,7 +30,7 @@ function Footer() {
         {partners &&
           partners.map((data) => (
             <Link key={data.id} href={data.url} target={"_blank"}>
-              <img src={data.img} alt="" />
+              <img src={data.image} alt="" />
             </Link>
           ))}
       </div>

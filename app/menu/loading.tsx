@@ -4,11 +4,11 @@
 // import "react-loading-skeleton/dist/skeleton.css";
 
 export default function MenuLoading() {
-  // You can add any UI inside Loading, including a Skeleton.
-  // return <LoadingSkeleton />
-  return (
-    <>
-      <h1>loading</h1>
-    </>
-  );
-}
+    // You can add any UI inside Loading, including a Skeleton.
+    // return <LoadingSkeleton />
+    return (
+      <>
+        <h1>loading</h1>
+      </>
+    );
+  }

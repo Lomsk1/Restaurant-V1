@@ -27,7 +27,7 @@
   min-height: 110vh;
   display: flex;
   flex-direction: column;
-//   padding-bottom: 50px;
+  //   padding-bottom: 50px;
   .menu_container {
     width: 100%;
     height: max-content;
@@ -133,9 +133,9 @@
           .up {
             width: 100%;
             min-height: 2rem;
-            display: flex;
+            display: grid;
+            grid-template-columns: 1fr 0.5fr 1fr;
             align-items: center;
-            justify-content: space-between;
             @include fontNormal;
             p {
               margin: 0 1em;

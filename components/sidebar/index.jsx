@@ -54,19 +54,47 @@ function SideNavigation() {
               </li>
               <li>
                 <FontAwesomeIcon icon={faSquare} />
-                <Link href={"/"}>Recipes</Link>
+                <Link
+                  href={"/chef"}
+                  onClick={() => {
+                    setNavIsShow(false);
+                  }}
+                >
+                  Our Chefs
+                </Link>
               </li>
               <li>
                 <FontAwesomeIcon icon={faSquare} />
-                <Link href={"/"}>Our Chefs</Link>
+                <Link
+                  href={"/about_us"}
+                  onClick={() => {
+                    setNavIsShow(false);
+                  }}
+                >
+                  About
+                </Link>
               </li>
               <li>
                 <FontAwesomeIcon icon={faSquare} />
-                <Link href={"/"}>About</Link>
+                <Link
+                  href={"/"}
+                  onClick={() => {
+                    setNavIsShow(false);
+                  }}
+                >
+                  Blog
+                </Link>
               </li>
               <li>
                 <FontAwesomeIcon icon={faSquare} />
-                <Link href={"/"}>Contact</Link>
+                <Link
+                  href={"/contact"}
+                  onClick={() => {
+                    setNavIsShow(false);
+                  }}
+                >
+                  Contact
+                </Link>
               </li>
             </ul>
 

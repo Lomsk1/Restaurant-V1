@@ -1,5 +1,3 @@
-import Footer from "@/components/footer";
-import Header from "@/components/header";
 import MenuContainer from "@/components/menu_container";
 import HomeTitle from "@/components/title/home";
 import MenuTitle from "@/components/title/menu";
@@ -49,39 +47,30 @@ export default function Menu() {
   ];
   return (
     <>
-      {/* <Header /> */}
-      
-      {/* <section className="menu_section_one">
+      <section className="menu_section_one">
         <div className="filter"></div>
         <HomeTitle title="Our Menu" section="DELICIOUS & AMAZING" />
       </section>
-
       <section className="menu_section_two">
         <MenuTitle title="Starter" />
         <MenuContainer productData={starterData} category="Starter" />
       </section>
-
       <section className="menu_section_two">
         <MenuTitle title="Main Courses" />
         <MenuContainer productData={starterData} category="Main Courses" />
       </section>
-
       <section className="menu_section_two">
         <MenuTitle title="Salads" />
         <MenuContainer productData={starterData} category="Salads" />
       </section>
-
       <section className="menu_section_two">
         <MenuTitle title="Desserts" />
         <MenuContainer productData={starterData} category="Desserts" />
       </section>
-
       <section className="menu_section_two">
         <MenuTitle title="Wine" />
         <MenuContainer productData={starterData} category="Wine" />
-      </section> */}
-
-      {/* <Footer /> */}
+      </section>
     </>
   );
 }

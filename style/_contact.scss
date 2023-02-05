@@ -1,0 +1,281 @@
+.contact_one {
+  width: 100%;
+  min-height: 70vh;
+  height: max-content;
+  @include backgroundImage(
+    "https://images.hdqwalls.com/wallpapers/anime-girl-eating-street-food-4k-zm.jpg"
+  );
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-top: 4rem;
+
+  .filter {
+    @include filter;
+  }
+}
+
+.contact_two {
+  width: 100%;
+  height: max-content;
+  min-height: 500px;
+  display: flex;
+  margin-top: 100px;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  .box {
+    width: 330px;
+    height: max-content;
+    min-height: 500px;
+    text-align: center;
+    margin: 1em;
+    border: 1px solid $white;
+    border-radius: 10px;
+    overflow: hidden;
+    .image {
+      width: 100%;
+      height: 300px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+    h2 {
+      margin: 20px 0;
+      @include fontBeautyRegular;
+      font-size: 1.5rem;
+      letter-spacing: 2px;
+      color: $light-grey;
+    }
+    hr {
+      width: 80%;
+      margin: 20px auto;
+    }
+    .text {
+      display: flex;
+      width: 100%;
+      height: max-content;
+      min-height: 4rem;
+      word-wrap: break-word;
+      margin-top: 1em;
+      align-items: center;
+      padding: 0 0.5em;
+
+      .svg {
+        width: 30px;
+        min-width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 1px solid $svg_carrot_color;
+        @include flexCenter(row);
+        svg {
+          width: 70%;
+          height: 70%;
+          color: $svg_carrot_color;
+        }
+      }
+      p,
+      a {
+        @include fontNormal;
+        font-size: 0.9rem;
+        letter-spacing: 2px;
+        margin: 0 1em;
+        text-decoration: none;
+        width: calc(100% - 40px);
+        color: $white;
+      }
+    }
+  }
+}
+
+.contact_three {
+  width: 100%;
+  height: max-content;
+  min-height: 500px;
+  margin-top: 100px;
+  @include flexCenter(column);
+  .container {
+    width: 80%;
+    height: max-content;
+    display: flex;
+    @include backgroundImage(
+      "https://restho-nextjs.vercel.app/_next/static/media/reservation-1-bg.be1194b7.png"
+    );
+    @media (max-width: 800px) {
+      height: 800px;
+      flex-direction: column-reverse;
+    }
+
+    form {
+      width: 50%;
+      height: max-content;
+      display: flex;
+      flex-direction: column;
+      padding-left: 1em;
+      background-color: rgba(0, 0, 0, 0.616);
+      @media (max-width: 800px) {
+        width: 100%;
+        // height: 50%;
+      }
+      padding-bottom: 30px;
+
+      .form__group {
+        position: relative;
+        padding: 10px 0 0;
+        margin-top: 10px;
+        width: 70%;
+        @media (max-width: 600px) {
+          width: 90%;
+        }
+      }
+
+      .form__field {
+        font-family: inherit;
+        width: 100%;
+        border: 0;
+        border-bottom: 2px solid #9b9b9b;
+        outline: 0;
+        font-size: 1.3rem;
+        color: #fff;
+        padding: 7px 0;
+        background: transparent;
+        transition: border-color 0.2s;
+        @media (max-width: 370px) {
+          font-size: 1.1rem;
+        }
+
+        &::placeholder {
+          color: transparent;
+        }
+
+        &:placeholder-shown ~ .form__label {
+          font-size: 1.3rem;
+          cursor: text;
+          top: 20px;
+          @media (max-width: 370px) {
+            font-size: 1.1rem;
+          }
+        }
+      }
+
+      .form__label {
+        position: absolute;
+        top: 0;
+        display: block;
+        transition: 0.2s;
+        font-size: 1rem;
+        color: #9b9b9b;
+      }
+
+      .form__field:focus {
+        ~ .form__label {
+          position: absolute;
+          top: 0;
+          display: block;
+          transition: 0.2s;
+          font-size: 1rem;
+          color: #11998e;
+          font-weight: 700;
+        }
+        padding-bottom: 6px;
+        font-weight: 700;
+        border-width: 3px;
+        border-image: linear-gradient(to right, #11998e, #38ef7d);
+        border-image-slice: 1;
+      }
+      /* reset input */
+      .form__field {
+        &:required,
+        &:invalid {
+          box-shadow: none;
+        }
+      }
+
+      textarea {
+        width: 66.5%;
+        height: 100px;
+        resize: none;
+        margin-top: 15px;
+        outline: none;
+        border: 1px solid #888;
+        border-radius: 15px;
+        padding: 10px;
+        @include fontNormal;
+        font-weight: 400;
+        font-size: 1.1rem;
+        background-color: black;
+        color: white;
+        @media (max-width: 600px) {
+          width: 90%;
+        }
+      }
+      button {
+        width: 200px;
+        height: 50px;
+        text-decoration: none;
+        border: 1px solid rgb(146, 148, 248);
+        position: relative;
+        overflow: hidden;
+        background: none;
+        margin-top: 2em;
+        align-self: center;
+        color: #9b9b9b;
+        @media (max-width: 1200px) {
+          width: 150px;
+        }
+        @media (max-width: 600px) {
+          width: 250px;
+        }
+        @media (max-width: 400px) {
+          margin-bottom: 20px;
+        }
+        @media (max-width: 370px) {
+          width: 200px;
+        }
+
+        &:hover {
+          box-shadow: 1px 1px 25px 10px rgba(146, 148, 248, 0.4);
+        }
+
+        &:before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: -100%;
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(
+            120deg,
+            transparent,
+            rgba(146, 148, 248, 0.4),
+            transparent
+          );
+          transition: all 650ms;
+        }
+
+        &:hover:before {
+          left: 100%;
+        }
+      }
+      .status {
+        margin: 0 auto;
+        padding: 1em;
+      }
+    }
+
+    .map_container {
+      width: 50%;
+      height: 100%;
+      background-color: forestgreen;
+      padding-bottom: 30px;
+
+      @media (max-width: 800px) {
+        width: 100%;
+        height: 50%;
+      }
+    }
+  }
+}

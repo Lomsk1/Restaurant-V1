@@ -17,8 +17,6 @@ config.autoAddCss = false;
 export default function Home() {
   return (
     <main>
-      {/* <Header /> */}
-
       <HomePageWelcome />
 
       <HomepageMenu />
@@ -36,8 +34,6 @@ export default function Home() {
       <HomePageStrength />
 
       <HomePageEvent />
-
-      {/* <Footer /> */}
     </main>
   );
 }

@@ -1,0 +1,134 @@
+.chef_section_one {
+  width: 100%;
+  min-height: 70vh;
+  height: max-content;
+  @include backgroundImage(
+    "https://wallpapersmug.com/download/3840x2160/ebde76/delicious-pizza-food.jpg"
+  );
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-top: 4rem;
+
+  .filter {
+    @include filter;
+  }
+}
+.chef_section_two {
+  width: 100%;
+  min-height: 550px;
+  background-color: transparent;
+  display: flex;
+  overflow-x: scroll;
+  @include scroll;
+  transform: translateY(200px);
+  .box_ {
+    width: 300px;
+    min-width: 300px;
+    height: 400px;
+    min-height: 400px;
+    margin: 1em;
+    position: relative;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    &:hover {
+      .info {
+        bottom: 100px;
+        opacity: 0;
+        transition: 700ms;
+      }
+      .hover_info {
+        opacity: 1;
+        transition: 700ms;
+        transform: translateY(0px);
+      }
+    }
+    .info {
+      position: absolute;
+      width: 200px;
+      height: 100px;
+      background-color: #e2d4b7;
+      bottom: -50px;
+      right: 50px;
+      text-align: center;
+      @include flexCenter(column);
+      transition: 700ms;
+      border-radius: 15px;
+
+      p {
+        margin: 0;
+        margin: 0.5em;
+        &:nth-child(1) {
+          @include fontBeautyRegular;
+          letter-spacing: 3px;
+          font-size: 1rem;
+          color: $space_cadet_color;
+        }
+        &:nth-child(2) {
+          @include fontNormal;
+          letter-spacing: 3px;
+          font-size: 0.8rem;
+          color: $crayola_color;
+        }
+      }
+    }
+    .hover_info {
+      border-radius: 10px;
+      width: 100%;
+      height: 100%;
+      transform: translateY(-100px);
+      background-color: rgba(0, 0, 0, 0.836);
+      @include flexCenter(column);
+      text-align: center;
+      padding: 0 1em;
+      opacity: 0;
+      transition: 700ms;
+
+      .name {
+        p {
+          margin: 0.5em 0;
+          &:nth-child(1) {
+            @include fontBeautyRegular;
+            letter-spacing: 3px;
+            font-size: 1rem;
+            color: $white;
+          }
+          &:nth-child(2) {
+            @include fontNormal;
+            letter-spacing: 3px;
+            font-size: 0.8rem;
+            color: $link-txt-blue;
+          }
+        }
+      }
+      .description {
+        margin-top: 20px;
+        p {
+          margin: 0;
+          @include fontNormal;
+          letter-spacing: 3px;
+          font-size: 0.85rem;
+          color: $light-grey;
+        }
+      }
+
+      .social {
+        margin-top: 20px;
+        svg {
+          width: 20px;
+          height: 20px;
+          margin: 1em;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+.white_space {
+  width: 100%;
+  height: 200px;
+  background-color: $dark-grey;
+}

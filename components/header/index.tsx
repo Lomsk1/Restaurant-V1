@@ -8,6 +8,7 @@ import {
   faEnvelope,
 } from "@fortawesome/free-regular-svg-icons";
 import { useEffect, useState } from "react";
+import Link from "next/link";
 // import gsap from "gsap";
 // import ScrollTrigger from "gsap/ScrollTrigger";
 // import MotionPathPlugin from "gsap/MotionPathPlugin";
@@ -63,7 +64,7 @@ function Header() {
             <FontAwesomeIcon className="middle_svg" icon={faSquare} />
             <div>
               <FontAwesomeIcon icon={faEnvelope} />
-              <p>info@lomsk1.dev</p>
+              <Link href="mailto:info@lomsk1.dev">info@lomsk1.dev</Link>
             </div>
           </div>
         </header>

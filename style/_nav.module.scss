@@ -22,7 +22,7 @@
       svg {
         color: $white;
       }
-      p {
+      p, a {
         font-size: 0.8rem;
         margin-left: 1em;
         @include fontNormal;

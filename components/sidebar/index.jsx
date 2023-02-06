@@ -78,17 +78,6 @@ function SideNavigation() {
               <li>
                 <FontAwesomeIcon icon={faSquare} />
                 <Link
-                  href={"/"}
-                  onClick={() => {
-                    setNavIsShow(false);
-                  }}
-                >
-                  Blog
-                </Link>
-              </li>
-              <li>
-                <FontAwesomeIcon icon={faSquare} />
-                <Link
                   href={"/contact"}
                   onClick={() => {
                     setNavIsShow(false);

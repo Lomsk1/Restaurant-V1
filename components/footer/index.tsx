@@ -84,7 +84,13 @@ function Footer() {
 
       {/* Copyright */}
       <div className="copyright">
-        <p>© Copyright 2023 by Giorgi Lomsianidze [https://www.lomsk1.dev/ ]</p>
+        <p>
+          © Copyright 2023 by Giorgi Lomsianidze [
+          <Link target={"_blank"} href="https://www.lomsk1.dev/">
+            https://www.lomsk1.dev
+          </Link>
+          ]
+        </p>
       </div>
     </section>
   );

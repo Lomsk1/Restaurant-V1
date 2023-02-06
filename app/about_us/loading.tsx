@@ -1,4 +1,4 @@
-export default function Loading() {
+export default function AboutLoading() {
   return (
     <>
       <section className="_loader">

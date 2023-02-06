@@ -43,14 +43,14 @@ export default function RootLayout({
       */}
       <head />
       <body>
-        <SideNavigation />
-        <div className="main_child">
-          <Suspense fallback={<Loading />}>
+        <Suspense fallback={<Loading />}>
+          <SideNavigation />
+          <div className="main_child">
             <Header />
             {children}
             <Footer />
-          </Suspense>
-        </div>
+          </div>
+        </Suspense>
       </body>
     </html>
   );

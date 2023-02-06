@@ -176,5 +176,10 @@
     text-align: center;
     @include fontNormal;
     color: $white;
+    a{
+      text-align: center;
+      @include fontNormal;
+      color: $svg_carrot_color;
+    }
   }
 }

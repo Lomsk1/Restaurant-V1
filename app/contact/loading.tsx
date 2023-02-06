@@ -1,4 +1,4 @@
-export default function Loading() {
+export default function ContactLoading() {
   return (
     <>
       <section className="_loader">

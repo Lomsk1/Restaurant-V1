@@ -1,5 +1,5 @@
 import { Suspense } from "react";
-import MenuLoading from "./loading";
+import ChefLoading from "./loading";
 
 export default function MenuLayout({
   children,
@@ -8,7 +8,7 @@ export default function MenuLayout({
 }) {
   return (
     <section>
-      <Suspense fallback={<MenuLoading />}>{children}</Suspense>
+      <Suspense fallback={<ChefLoading />}>{children}</Suspense>
     </section>
   );
 }

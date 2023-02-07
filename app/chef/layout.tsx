@@ -1,7 +1,7 @@
 import { Suspense } from "react";
 import ChefLoading from "./loading";
 
-export default function MenuLayout({
+export default function ChefLayout({
   children,
 }: {
   children: React.ReactNode;

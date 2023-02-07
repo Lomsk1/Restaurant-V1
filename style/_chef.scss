@@ -178,20 +178,17 @@
 .chef_details_section_two {
   min-height: 500px;
   margin-top: 100px;
-  background-color: brown;
   @include flexCenter(row);
 
   .container {
-    width: 80%;
+    width: 85%;
     min-height: 400px;
-    background-color: blueviolet;
     gap: 20px;
     display: flex;
 
     .info {
-      width: 50%;
+      width: 60%;
       min-height: 400px;
-      background-color: blue;
       padding: 1em;
       .home_title {
         margin: 0;
@@ -208,37 +205,138 @@
       }
       .about {
         h3 {
-          background-color: red;
           margin: 20px 0;
           @include fontNormal;
           letter-spacing: 3px;
           font-size: 1.2em;
+          color: $dark-grey;
         }
         p {
           margin: 10px 0;
           @include fontNormal;
           letter-spacing: 2px;
           font-size: 0.8em;
+          color: $white;
         }
       }
-      .contact_information{
-        display: grid;
-        flex-wrap: wrap;
-        background-color: green;
-        // gap: 1em;
-        grid-column: 1fr 1fr;
-        grid-template-areas: 1fr;
-        p{
-          margin: 0;
-          background-color: gold;
-          width: fit-content;
+      .contact_information {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        margin-top: 30px;
+        div {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          justify-content: space-between;
+          p {
+            margin: 0;
+            @include fontNormalBold;
+            font-size: 1.1em;
+            color: $dark-grey;
+            span {
+              @include fontNormal;
+              font-size: 0.75em;
+              color: $svg_carrot_color;
+              margin-left: 0.5em;
+              letter-spacing: 1px;
+            }
+            a {
+              @include fontNormal;
+              font-size: 0.75em;
+              color: $svg_carrot_color;
+              margin-left: 0.5em;
+              text-decoration: none;
+              letter-spacing: 1px;
+            }
+          }
+        }
+      }
+      .social {
+        display: flex;
+        align-items: center;
+        p {
+          @include fontNormalBold;
+          letter-spacing: 2px;
+          font-size: 1.1em;
+          color: $dark-grey;
+        }
+        svg {
+          width: 20px;
+          height: 20px;
+          margin-left: 1em;
         }
       }
     }
     .image {
-      width: 50%;
+      width: 40%;
       min-height: 400px;
-      background-color: cadetblue;
+      border-radius: 15px;
+      overflow: hidden;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
+      }
+    }
+  }
+}
+.chef_details_section_three {
+  min-height: 500px;
+  @include flexCenter(row);
+  margin-top: 100px;
+  .container {
+    width: 80%;
+    h2 {
+      margin: 20px 0;
+      @include fontNormal;
+      font-size: 1.3em;
+      color: $dark-grey;
+      letter-spacing: 3px;
+    }
+    p {
+      @include fontNormal;
+      font-size: 0.75em;
+      color: $svg_carrot_color;
+      margin: 0;
+      letter-spacing: 2px;
+      width: 60%;
+      text-align: end;
+    }
+    label {
+      margin-top: 3rem;
+      display: flex;
+      color: $white;
+    }
+    .box {
+      height: 10px;
+      margin-top: 0.5em;
+      display: flex;
+      .progress {
+        background-color: #1c3041;
+        width: 20%;
+        @include flexCenter(row);
+        position: relative;
+        transition: all 0.5s;
+        &::before {
+          content: "";
+          width: 10px;
+          height: 10px;
+          background-color: #1c3041;
+          position: absolute;
+          right: 0;
+          top: 0;
+          border-radius: 50%;
+          box-shadow: 0 0 0 5px #1c3041, 0 0 0 10px #1c30418e,
+            0 0 0 15px #1c304142;
+        }
+        p {
+          margin: 0;
+          position: absolute;
+          width: fit-content;
+        }
+      }
     }
   }
 }

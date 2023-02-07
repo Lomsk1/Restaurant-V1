@@ -24,6 +24,11 @@ export const chefData = [
     instagram: "",
     avatar:
       "https://mediacity.co.in/delici/static/media/team-1.13ef80b1974630746485.jpg",
+    skill_description:
+      "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.",
+    sea_food: 80,
+    soup: 60,
+    mutton: 76,
   },
   {
     id: 2,
@@ -40,6 +45,11 @@ export const chefData = [
     instagram: "",
     avatar:
       "https://mediacity.co.in/delici/static/media/team-2.b5cdd3ec598386d90dc6.jpg",
+    skill_description:
+      "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.",
+    sea_food: 100,
+    soup: 20,
+    mutton: 76,
   },
   {
     id: 3,
@@ -56,6 +66,11 @@ export const chefData = [
     instagram: "",
     avatar:
       "https://mediacity.co.in/delici/static/media/team-3.b9d6f81ac39cd9ccb9de.jpg",
+    skill_description:
+      "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.",
+    sea_food: 80,
+    soup: 60,
+    mutton: 76,
   },
   {
     id: 4,
@@ -72,6 +87,11 @@ export const chefData = [
     instagram: "",
     avatar:
       "https://mediacity.co.in/delici/static/media/team-1.13ef80b1974630746485.jpg",
+    skill_description:
+      "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.",
+    sea_food: 82,
+    soup: 64,
+    mutton: 36,
   },
   {
     id: 5,
@@ -88,6 +108,11 @@ export const chefData = [
     instagram: "",
     avatar:
       "https://mediacity.co.in/delici/static/media/team-2.b5cdd3ec598386d90dc6.jpg",
+    skill_description:
+      "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.",
+    sea_food: 30,
+    soup: 20,
+    mutton: 56,
   },
   {
     id: 6,
@@ -104,6 +129,11 @@ export const chefData = [
     instagram: "",
     avatar:
       "https://mediacity.co.in/delici/static/media/team-1.13ef80b1974630746485.jpg",
+    skill_description:
+      "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.",
+    sea_food: 82,
+    soup: 61,
+    mutton: 71,
   },
 ];
 

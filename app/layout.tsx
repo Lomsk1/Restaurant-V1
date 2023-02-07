@@ -44,11 +44,11 @@ export default function RootLayout({
       <head />
       <body>
         <Suspense fallback={<Loading />}>
-          {/* <SideNavigation /> */}
+          <SideNavigation />
           <div className="main_child">
-            {/* <Header /> */}
+            <Header />
             {children}
-            {/* <Footer /> */}
+            <Footer />
           </div>
         </Suspense>
       </body>

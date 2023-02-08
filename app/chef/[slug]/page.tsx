@@ -1,5 +1,4 @@
 import { NextPage } from "next";
-import { chefData } from "../page";
 import HomeTitle from "@/components/title/home";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -8,6 +7,7 @@ import {
   faLinkedinIn,
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
+import { Fragment } from "react";
 
 interface Props {
   id: number;
@@ -29,6 +29,135 @@ interface Props {
 }
 
 export default function Page({ params }: { params: { slug: string } }) {
+  const chefData = [
+    {
+      id: 1,
+      name: "George",
+      last_name: "Lomks1",
+      title: "Executive Head Chef",
+      description:
+        "I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.",
+      experience: 2,
+      phone: "+995 599391080",
+      email: "info@lomsk1.dev",
+      facebook: "",
+      linkedin: "",
+      instagram: "",
+      avatar:
+        "https://mediacity.co.in/delici/static/media/team-1.13ef80b1974630746485.jpg",
+      skill_description:
+        "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.",
+      sea_food: 80,
+      soup: 60,
+      mutton: 76,
+    },
+    {
+      id: 2,
+      name: "Brad",
+      last_name: "Pit",
+      title: "Executive Head Chef",
+      description:
+        "I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.",
+      experience: 1,
+      phone: "+995 599391080",
+      email: "info@lomsk1.dev",
+      facebook: "",
+      linkedin: "",
+      instagram: "",
+      avatar:
+        "https://mediacity.co.in/delici/static/media/team-2.b5cdd3ec598386d90dc6.jpg",
+      skill_description:
+        "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.",
+      sea_food: 100,
+      soup: 20,
+      mutton: 76,
+    },
+    {
+      id: 3,
+      name: "Nick",
+      last_name: "Botch",
+      title: "Executive Head Chef",
+      description:
+        "I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.",
+      experience: 6,
+      phone: "+995 599391080",
+      email: "info@lomsk1.dev",
+      facebook: "",
+      linkedin: "",
+      instagram: "",
+      avatar:
+        "https://mediacity.co.in/delici/static/media/team-3.b9d6f81ac39cd9ccb9de.jpg",
+      skill_description:
+        "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.",
+      sea_food: 80,
+      soup: 60,
+      mutton: 76,
+    },
+    {
+      id: 4,
+      name: "Gio",
+      last_name: "Chkokac",
+      title: "Executive Head Chef",
+      description:
+        "I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.",
+      experience: 2,
+      phone: "+995 599391080",
+      email: "info@lomsk1.dev",
+      facebook: "",
+      linkedin: "",
+      instagram: "",
+      avatar:
+        "https://mediacity.co.in/delici/static/media/team-1.13ef80b1974630746485.jpg",
+      skill_description:
+        "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.",
+      sea_food: 82,
+      soup: 64,
+      mutton: 36,
+    },
+    {
+      id: 5,
+      name: "Bill",
+      last_name: "Gat",
+      title: "Chef",
+      description:
+        "I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.",
+      experience: 8,
+      phone: "+995 599391080",
+      email: "info@lomsk1.dev",
+      facebook: "",
+      linkedin: "",
+      instagram: "",
+      avatar:
+        "https://mediacity.co.in/delici/static/media/team-2.b5cdd3ec598386d90dc6.jpg",
+      skill_description:
+        "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.",
+      sea_food: 30,
+      soup: 20,
+      mutton: 56,
+    },
+    {
+      id: 6,
+      name: "George",
+      last_name: "Bao",
+      title: "Chef",
+      description:
+        "I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.",
+      experience: 10,
+      phone: "+995 599391080",
+      email: "info@lomsk1.dev",
+      facebook: "",
+      linkedin: "",
+      instagram: "",
+      avatar:
+        "https://mediacity.co.in/delici/static/media/team-1.13ef80b1974630746485.jpg",
+      skill_description:
+        "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.",
+      sea_food: 82,
+      soup: 61,
+      mutton: 71,
+    },
+  ];
+
   return (
     <>
       <section className="chef_details_section_one">
@@ -38,7 +167,7 @@ export default function Page({ params }: { params: { slug: string } }) {
       {chefData
         .filter((data: Props) => data.id === Number(params.slug))
         .map((data) => (
-          <>
+          <Fragment key={data.id}>
             <section className="chef_details_section_two">
               <div className="container">
                 <div className="info">
@@ -129,7 +258,7 @@ export default function Page({ params }: { params: { slug: string } }) {
                 </div>
               </div>
             </section>
-          </>
+          </Fragment>
         ))}
     </>
   );
